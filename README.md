@@ -1,5 +1,11 @@
 # update-hosted-feature-service
 
+## ! REPO ARCHIVED !
+This repo has not been reviewed nor updated in many years. Archiving it in case it's contents are still useful, but recommend looking to [ArcGIS Pro doc](https://pro.arcgis.com/en/pro-app/latest/help/main/welcome-to-the-arcgis-pro-app-help.htm), [ArcGIS Enterprise doc](https://enterprise.arcgis.com/en/documentation/) and [esri blogs](https://www.esri.com/arcgis-blog/) for up to date best practices.
+
+----
+
+
 This Python script turns an MXD into a service definition (SD) file. Your ArcGIS.com account is searched for a matching service. The SD file is uploaded to your ArcGIS.com account, the existing service is overwritten with new content.
 
 #### Note! Update as of August, 2015 - A major overhaul to the entire workflow, but it'll continue updating your hosted feature service just the same as it did previously! The script no longer requires [Requests](http://docs.python-requests.org/en/latest/), it uses built-in Python libraries. It will now push your SD file to arcgis.com using a multipart upload (10mb chunks). This means it should support really big uploads without running out of memory!
